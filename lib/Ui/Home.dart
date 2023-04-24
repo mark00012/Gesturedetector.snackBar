@@ -8,6 +8,13 @@ class ScaffoldExample extends StatelessWidget {
         title: Text("Scaffold"),
         centerTitle: false,
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.lightGreen,
+        child: Icon(Icons.call_missed),
+        
+        onPressed: () => debugPrint("call missed"),),
+
+
       bottomNavigationBar: BottomNavigationBar(items: const [
      BottomNavigationBarItem(icon: Icon(Icons.circle),label: "first"),
      BottomNavigationBarItem(icon: Icon(Icons.mail),label: "second"),
