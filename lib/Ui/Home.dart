@@ -8,6 +8,11 @@ class ScaffoldExample extends StatelessWidget {
         title: Text("Scaffold"),
         centerTitle: false,
       ),
+      bottomNavigationBar: BottomNavigationBar(items: const [
+     BottomNavigationBarItem(icon: Icon(Icons.circle),label: "first"),
+     BottomNavigationBarItem(icon: Icon(Icons.mail),label: "second"),
+     BottomNavigationBarItem(icon: Icon(Icons.access_alarm),label: "second"),
+      ],onTap: (int index) => debugPrint("tapped item $index"),),
       body: Container(
         alignment: Alignment.center,
         child: Column(
